@@ -196,40 +196,5 @@
                 <a href="order.html" class="order-button">اطلب الان</a>
             </div>
 
-            <!-- إضافة المزيد من المنتجات هنا -->
-        </div>
-        <!-- نموذج الطلب -->
-        <div class="order-form" id="order-form">
-            <h3>اطلب الآن</h3>
-            <form id="orderForm">
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="phone">رقم الهاتف:</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <label for="address">العنوان:</label>
-                <textarea id="address" name="address" rows="4" required></textarea>
-
-                <input type="submit" value="إرسال الطلب">
-            </form>
-            </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Step Up Vietnam - جميع الحقوق محفوظة.</p>
-    </footer>
-    <script>
-        // إظهار نموذج الطلب عند الضغط على زر "اطلب الآن"
-        const orderButtons = document.querySelectorAll('.order-button');
-        const orderForm = document.getElementById('order-form');
-
-        orderButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                orderForm.style.display = 'block';
-            });
-        });
-    </script>
-
 </body>
 </html>
