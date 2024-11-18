@@ -5,6 +5,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $address = $_POST['address'];
+    
+    header("Access-Control-Allow-Origin: *"); // يسمح بالوصول من أي مصدر
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS"); // يسمح بالطرق المحددة
+header("Access-Control-Allow-Headers: Content-Type");
+
 
     // هنا يمكنك حفظ البيانات في قاعدة بيانات أو إرسالها عبر البريد الإلكتروني
     // على سبيل المثال:
