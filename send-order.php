@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $whatsapp = htmlspecialchars($_POST['whatsapp']);
 
     // عنوان البريد الإلكتروني الذي سيتم إرسال الطلب إليه
-    $to = "";
+    $to = "redavd12@gmail.com";
 
     // إعداد البريد
     $subject = "طلب جديد: $product";
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "رقم الواتساب: $whatsapp\n";
 
     // عنوان المرسل
-    $headers = "redavd12@gmail.com";
+    $headers = "";
 
     // إرسال البريد
     if (mail($to, $subject, $message, $headers)) {
