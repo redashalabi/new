@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // هنا يمكنك حفظ البيانات في قاعدة بيانات أو إرسالها عبر البريد الإلكتروني
     // على سبيل المثال:
-    $to = "your-email@example.com";
+    $to = "redavd12@gmail.com";
     $subject = "طلب جديد";
     $message = "الاسم: $name\nالهاتف: $phone\nالبريد الإلكتروني: $email\nالعنوان: $address";
     $headers = "From: no-reply@example.com";
